@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-do LIST final</title>
+    <link rel="Stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="header">
+        <h1>TO-DO LIST</h1>
+    </div>
+    <!-- Add new task -->
+    <div class="container">
+ 
+ 
+<div  class="container1">
+    <div class="searchdiv">
+
+          <input type="text" placeholder="search" id="searchbox"><button id="search" onclick="Search()"><i class="fa fa-search"></i></button>
+    </div>
+
+        <table border=1  class="displaytable">
+            <thead>
+                <tr>
+                    <th>Activity</th>
+                    <th>Start Date</th>
+                    <th>Due Date</th>
+                    <th>Status</th>
+                    <th>Option</th>
+                </tr>
+            </thead>
+            <tbody id="taskrow">
+
+            </tbody>
+        </table>
+    </div>
+
+
+    <div class="container2">
+        <form class="Form" onsubmit="event.preventDefault()">
+            <label>Activity:</label>
+            <input id="activity" type="text" placeholder="To do" required>
+            <label>Start Date:</label>
+            <input id="start_date"class="date" type="date" placeholder="Start date" required>
+            <label>Due Date :</label>
+            <input id="due_date"class="date" type="date" placeholder="Due date" required>
+            <span id="text2">Put proper due date</span>
+            <label>Status:</label>
+            <select id="Status"  required>
+                <option value="">Status</option>
+                <option iD="ns">NotStarted</option>
+                <option id="s">Started</option>
+                <option id="ip">In Progress</option>
+                <option id="c">Completed</option>
+                <option id="dp">Due Passed</option>
+
+            </select>
+           <span id="text1">Please fill the requred feild</span>
+        </form>
+        <div class="button">
+            <button  id="add" type="submit" onclick="Add()" ><i class="bi-plus-lg"></i>Add</button>
+            <button id="cancel" type="reset" onclick="Reset()"><i class="bi-x-lg"></i></i>Reset</button>
+        </div>
+</div>
+
+</div>
+</body>
+</html>

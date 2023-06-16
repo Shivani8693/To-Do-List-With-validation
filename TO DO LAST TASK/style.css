@@ -1,0 +1,206 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    /* overflow: hidden; */
+}
+
+.container {
+    display: flex;
+   height:89vh;
+  
+}
+
+.header {
+    background-color: rgba(241, 221, 35, 0.904);
+    text-align: center;
+}
+
+h1 {
+    color: rgb(31, 25, 25);
+    font-size: 40px;
+    padding: 15px;
+}
+
+.container1 {
+    width: 75%;
+    
+ 
+}
+
+.container2{
+    /* position: relative; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 70px;
+    border: 2px solid rgb(219, 219, 219);
+    width: 45%;
+    position: relative;
+}
+.Form{
+    border-radius: 20px;
+    width: 70%;
+    /* margin: 0px; */
+    margin-left: 50px;
+    border: 3px solid rgb(255, 217, 0);
+    /* display: flex;
+        flex-direction: column;
+        justify-content: center; */
+    padding:30px ;
+    height: 61%;
+}
+
+label {
+    font-size: 20px;
+    padding: 2px;
+    /* border: 2px solid red; */
+
+}
+
+input {
+    display: inline-block;
+    width: 60%;
+    /* margin: 10px 15px; */
+    height: 25px;
+    padding: 10px 5px;
+    border: 1px solid rgb(202, 169, 169);
+    border-radius: 10px;
+    font-size: 15px;
+
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    width: 100px;
+    height: 50px;
+    /* display: flex;
+    justify-content: center; */
+    border-radius: 10px;
+    margin: 10px;
+    /* padding: 20px 10px; */
+    /* position: absolute; 
+    bottom: 30%; */
+
+     /* top:10%;
+    left: 36%; */
+    
+
+}
+#add{
+    position: absolute;
+    bottom: 15%;
+    right: 50%;
+    background-color: rgb(252, 193, 1);
+}
+
+#cancel{
+    position: absolute;
+    bottom: 15%;
+    right: 30%;
+    background-color: white;
+}
+
+.date{
+        width: 57%;
+        display: inline-block;
+        margin: 15px ;
+        height: 25px;
+        padding: 10px;
+    }
+
+select {
+    border-radius: 10px;
+    width: 65%;
+
+    padding: 10px;
+    height: 50px;
+    font-size: 15px;
+    margin-left: 60PX;
+
+}
+
+#activity {
+    margin-left: 25px;
+}
+
+#Status {
+    margin-left: 48px;
+}
+
+#due_date,#start_date{
+    margin-left: 15px;
+}
+
+
+table {
+    /* height: 300px; */
+    width: 80%;
+    margin: 10px 50px;
+   background-color: whitesmoke;
+    border-collapse:collapse;
+}
+
+
+
+th {
+    height: 50px;
+    padding: 10px;
+    font-size: 20px;
+    background-color: rgb(247, 201, 52);
+    
+}
+
+option{
+    font-size: 15px;
+}
+
+.search{
+    display: flex;
+}
+
+
+.searchdiv{
+
+    height: 50px;
+    padding: 20px 50px;
+    justify-content: center;
+}
+
+#search{
+    text-align: center;
+    width: 20%;
+    height: 45px;
+    margin: 0px 14px;
+    background-color: rgb(201, 197, 175);
+   
+    border-radius: 10px;
+}
+
+span{
+    visibility: hidden;
+    color: rgb(202, 27, 27);
+    margin-left: 10rem;
+    float:inline-end;
+    display: block;
+}
+
+i{
+    font-size: 15px;
+    margin: 7px;
+}
+
+.edit{
+    background-color: rgb(252, 193, 1);
+    height: 40px;
+}
+
+.delete{
+    height: 40px;
+    background-color: white;
+}
+
+
