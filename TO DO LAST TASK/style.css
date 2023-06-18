@@ -1,13 +1,12 @@
 * {
     margin: 0px;
     padding: 0px;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 .container {
     display: flex;
    height:89vh;
-  
 }
 
 .header {
@@ -24,7 +23,6 @@ h1 {
 .container1 {
     width: 75%;
     
- 
 }
 
 .container2{
@@ -34,8 +32,9 @@ h1 {
     flex-direction: column;
     padding: 70px;
     border: 2px solid rgb(219, 219, 219);
-    width: 45%;
+    width: 40%;
     position: relative;
+    
 }
 .Form{
     border-radius: 20px;
@@ -46,21 +45,36 @@ h1 {
     /* display: flex;
         flex-direction: column;
         justify-content: center; */
-    padding:30px ;
-    height: 61%;
+    padding:50px ;
+    height: 50%;
+}
+
+
+.table{
+    overflow-y: scroll;
+    max-height: calc(80vh - 100px) !important;
+    min-width: auto!important;
+}
+
+th{
+    width: 10%;
+}
+
+td{
+    font-size: 20px;
+    text-align: center;
 }
 
 label {
-    font-size: 20px;
+    font-size: 23px;
     padding: 2px;
     /* border: 2px solid red; */
-
 }
 
 input {
     display: inline-block;
     width: 60%;
-    /* margin: 10px 15px; */
+    /* margin: 0px 15px; */
     height: 25px;
     padding: 10px 5px;
     border: 1px solid rgb(202, 169, 169);
@@ -87,19 +101,17 @@ button {
 
      /* top:10%;
     left: 36%; */
-    
-
 }
 #add{
     position: absolute;
-    bottom: 15%;
+    bottom: 18%;
     right: 50%;
     background-color: rgb(252, 193, 1);
 }
 
 #cancel{
     position: absolute;
-    bottom: 15%;
+    bottom: 18%;
     right: 30%;
     background-color: white;
 }
@@ -115,7 +127,6 @@ button {
 select {
     border-radius: 10px;
     width: 65%;
-
     padding: 10px;
     height: 50px;
     font-size: 15px;
@@ -173,19 +184,20 @@ option{
 #search{
     text-align: center;
     width: 20%;
-    height: 45px;
-    margin: 0px 14px;
+    height: 47px;
+
+    margin: 0px 15px;
     background-color: rgb(201, 197, 175);
-   
     border-radius: 10px;
 }
 
 span{
     visibility: hidden;
     color: rgb(202, 27, 27);
-    margin-left: 10rem;
+    margin-left: 9rem;
     float:inline-end;
     display: block;
+    
 }
 
 i{
