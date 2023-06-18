@@ -15,6 +15,17 @@ function Add() {
                 return
 
             }
+
+          
+            var repeat=TableData.findIndex(function(item){
+return (item.Activity === activity && item.StartDate===startDate && item.DueDate ===dueDate && item.Status===status);
+            
+        });
+            if(repeat!==-1){
+                document.getElementById("text3").style.visibility = "visible";
+                return
+            }
+
             var tableList = {
                 Activity: activity,
                 StartDate: startDate,
@@ -58,6 +69,20 @@ function onEdit(i) {
         if (i == null) {
             Add()
         } else {
+///////////////////////////////////////////////////////////////////////////////////////////////
+if ((activity !== "")  && startDate !== "" && dueDate !== "" && status !== "") {
+    if (dueDate < startDate) {
+        document.getElementById("text2").style.visibility = "visible";
+        return
+
+    }
+} else {
+    document.getElementById("text1").style.visibility = "visible";
+    return
+}
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
             TableData[i].Activity = activity;
             TableData[i].StartDate = startDate;
             TableData[i].DueDate = dueDate;
@@ -135,8 +160,10 @@ function Reset() {
     document.getElementById("start_date").value = "";
     document.getElementById("due_date").value = "";
     document.getElementById("Status").value = "";
-    document.getElementById("text2").style.visibility = "hidden";
     document.getElementById("text1").style.visibility = "hidden";
+    document.getElementById("text2").style.visibility = "hidden";
+    document.getElementById("text3").style.visibility = "hidden";
+
 }
 
 
